@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐆</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kú Dɔ́ - Apprendre le Fon du Bénin</title>
+    <!-- Fonts: Nunito & Fredoka for Duolingo-like feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Nunito', 'sans-serif'],
+              display: ['Fredoka', 'sans-serif'],
+            },
+            colors: {
+              duo: {
+                green: '#58cc02',
+                'green-dark': '#46a302',
+                yellow: '#ffc800',
+                'yellow-dark': '#e5b400',
+                blue: '#1cb0f6',
+                'blue-dark': '#1899d6',
+                red: '#ff4b4b',
+                'red-dark': '#ea2b2b',
+                purple: '#ce82ff',
+                'purple-dark': '#a55ee0',
+                gray: '#e5e5e5',
+                'gray-dark': '#afafaf',
+              },
+              benin: {
+                green: '#008751',
+                'green-dark': '#006b40',
+                yellow: '#fcd116',
+                'yellow-dark': '#e5bd0e',
+                red: '#e8112d',
+                'red-dark': '#c40b22',
+                soil: '#8B4513'
+              }
+            },
+            boxShadow: {
+              'duo-green': '0 4px 0 #46a302',
+              'duo-yellow': '0 4px 0 #e5b400',
+              'duo-blue': '0 4px 0 #1899d6',
+              'duo-red': '0 4px 0 #ea2b2b',
+              'duo-gray': '0 4px 0 #afafaf',
+              'duo-purple': '0 4px 0 #a55ee0',
+              'duo-card': '0 4px 0 #e5e5e5',
+              'duo-active': '0 1px 0',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Nunito', sans-serif;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .font-display {
+        font-family: 'Fredoka', cursive, sans-serif;
+      }
+      /* Custom bounce animations */
+      @keyframes soft-bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-6px); }
+      }
+      .animate-soft-bounce {
+        animation: soft-bounce 2s infinite ease-in-out;
+      }
+      /* Custom scrollbars */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f7f7f7] text-[#4b4b4b] antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
